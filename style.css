@@ -1,0 +1,133 @@
+html,body {
+	margin: 0;
+	padding: 0;
+   
+
+}
+
+body {
+	background-color: #2b2b2b;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.navigation {
+	background-color: #2b2b2b;
+	color: white;
+	height: 20px;
+
+	animation-name: navegacao;
+	animation-duration: 4s;
+}
+
+.main {
+	padding: 40px 180px 80px 100px;
+
+	animation-name: conteudo;
+	animation-duration: 2s;
+
+}
+
+.cv-pic {
+	float: left;
+	width: 260px;
+	height: 280px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: right;
+}
+
+.main h1 {
+	color: #f27609;
+	font-weight: normal;
+}
+
+.main h2 {
+	color: #f27609;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-top: 40px;
+}
+
+.main h3 {
+	color: #f27609;
+	font-size: 12px;
+	text-transform: uppercase;
+
+}
+
+.main p {
+	color: rgb(16, 14, 14);
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 24px;
+	text-align: justify;
+}
+
+
+.caminho {
+	list-style: none;
+	padding-left: 0;
+	color: grey;
+}
+
+.caminho li {
+	display: inline-block;
+    color: #f27609;
+}
+
+.social-img {
+	width: 50px;
+	margin-right: 10px;
+}
+
+
+@keyframes conteudo {
+	0% {opacity: 0; transform: translate(-20px,0px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+} 
+
+@keyframes navegacao {
+	0% {opacity: 0;}
+	50% {opacity: .8;}
+	100% {opacity: 1}
+} 
+
+
+
+
+@media (max-width: 1000px) {
+
+
+.navigation li {
+	display: none;
+}
+
+.navigation li.threeline-icon {
+	display: inline-block;
+}
+
+
+.main {
+	padding: 10px 5% 40px 5%;
+	overflow-wrap: break-word;
+  	word-wrap: break-word;
+
+
+}
+
+.main p {
+	text-align: left;
+	line-height: 30px;
+
+}
+
+
+.cv-pic {
+	float: none;
+	max-width: 100%;
+	margin-right: 0px;
+}
+
+}
